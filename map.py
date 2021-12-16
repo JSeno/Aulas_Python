@@ -44,12 +44,12 @@ Com map, fazemos mapeamento de valores para função.
 # O map object: f(a1), f(a2), f(a3), f(...), f(an)
 # Mais um exemplo
 # Cidades e temperaturas em graus celsius
-cidades = [('Berlin', 29), ('Cairo', 36), ('Buenos Aires', 19), ('Los Angeles', 26), ('Tokio', 27),
-             ('Nova York', 28), ('Londres', 22)]
-print(cidades)
+# cidades = [('Berlin', 29), ('Cairo', 36), ('Buenos Aires', 19), ('Los Angeles', 26), ('Tokio', 27),
+#              ('Nova York', 28), ('Londres', 22)]
+# print(cidades)
 
-# Converter graus celsius para fareheint
-# f = 9 / 5 * c + 32
-# Lambda
-c_para_f = lambda dado: (dado[0],(9/5)* dado[1]+ 32)
-print(list(map(c_para_f, cidades)))
+# # Converter graus celsius para fareheint
+# # f = 9 / 5 * c + 32
+# # Lambda
+# c_para_f = lambda dado: (dado[0],(9/5)* dado[1]+ 32)
+# print(list(map(c_para_f, cidades)))
