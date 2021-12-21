@@ -12,6 +12,8 @@ KeyError -> Ocorre quando tentamos acessar um dicionário com uma chave que não
 AttributeError -> Ocorre quando uma variável não tem um atributo/ função
 IndentationError -> Ocorre quando não respeitamos a indentação do Python que são de 4 espaços.
 
+Obs: Exceptions e Erros são sinônimos na programação
+Obs: Importante ler e prestar atenção na saída de error.
 """
 # Exemplos de SyntaxeError:
 # def funcao: # Falta os parênteses após a função seria 'def funcao():' o correto
