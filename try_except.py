@@ -1,0 +1,61 @@
+"""
+O block try/except
+
+Utilizamos o bloco try/exepct para tratar erros que podem ocorrer no nosso código. Previnindo
+assim que o programa pare de funcionar e o usuário receba mensagens de erro inesperado.
+
+A forma geral mais simples é:
+
+try:
+    //execução problemática
+execpt:
+    //o que deve ser feito em caso de problema
+
+
+# Exemplo 1 - Tratando um erro genérico
+
+try:
+    geek()
+except:
+    print("Deu algum problema")
+# Tente executar a função geek(), caso você não consiga imprima uma mensagem de erro.
+
+# Exemplo 2 - Tratando um erro genérico
+
+try:
+    len(5)
+except:
+    print("Deu algum problema")
+
+Obs: Tratar erro de forma genérica não é a melhor forma de tratamento de erros.
+
+# Exemplo 3 - Tratando um erro especifíco
+
+try:
+    geek()
+except NameError:
+    print("Você está utilizando uma função inexistente")
+
+# Exemplo 4 - Tratando um erro especifíco
+
+try:
+    len(5)
+except TypeError:
+    print("Você está utilizando uma função inexistente")
+
+
+# Exemplo 5 - Tratando um erro especifíco com detalhes do erro
+
+try:
+    len(5)
+except TypeError as err:
+    print(f"A aplicação gerou o seguinte erro {err}")
+
+"""
+
+try:
+    len(5)
+except NameError as erra:
+    print(f"Deu NameError: {erra}")
+except TypeError as errb:
+    print(f"Deu TypeError: {errb}")
