@@ -51,7 +51,6 @@ try:
 except TypeError as err:
     print(f"A aplicação gerou o seguinte erro {err}")
 
-"""
 
 try:
     len(5)
@@ -59,3 +58,17 @@ except NameError as erra:
     print(f"Deu NameError: {erra}")
 except TypeError as errb:
     print(f"Deu TypeError: {errb}")
+
+"""
+
+def pega_valor(dicionario, chave):
+    try:
+        return dicionario[chave]
+    except KeyError:
+        return None
+    except TypeError:
+        return None
+
+dic = {'nome': 'Geek'}
+
+print(pega_valor(dic, 'nome'))
